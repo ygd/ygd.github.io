@@ -1,5 +1,5 @@
 # Site settings
-title: Yasin Güzeldals Blog
+title: Yasin Güzeldal
 email: yasin@guezeldal.com
 description: Yasin Güzeldals design blog
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -9,3 +9,4 @@ github_username:  yguezeldal
 
 # Build settings
 markdown: kramdown
+permalink: /:categories/:title
