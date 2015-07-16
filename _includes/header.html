@@ -12,15 +12,16 @@
   <nav>
     <ul>
       <li>
-        <a href="{{ site.baseurl }}/" id="home"> Blog </a>
+        <a href="{{ site.baseurl }}/" id="home" title="Blog"> Blog </a>
       </li>
     {% for page in site.pages %}
     {% assign current_page_title = page.title | downcase %}
       {% if page.title %}
         <li>
           <a href="{{ page.url | prepend: site.baseurl }}"
+             title="{{ page.title }}"
           {% if current_page_path  == current_page_title %}
-            class="active"
+             class="active"
           {% endif %}>
             {{ page.title }}
           </a>
