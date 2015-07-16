@@ -37,14 +37,26 @@
       a {
         display: inline-block;
         font-size: 1.2em;
+        font-weight: 300;
         color: $black;
         margin: 0px 20px;
+        text-align: center;
         &:hover {
           color: $blue;
         }
         &.active {
           font-weight: 600;
-          height: 27px;
+        }
+        &:after {
+          content: attr(title);
+          display: block;
+          font-weight: 600;
+          text-align: center;
+          visibility: hidden;
+          height: 1px;
+          margin-top: -7px;
+          overflow: hidden;
+          color: transparent;
         }
       }
     }
