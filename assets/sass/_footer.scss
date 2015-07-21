@@ -1,0 +1,11 @@
+.page-footer {
+  border-top: 2px solid $black;
+  text-align: center;
+  .social-icon {
+    display: inline-block;
+    margin: 30px 10px;
+  }
+  svg {
+    width: 25px;
+  }
+}
