@@ -2,4 +2,11 @@
 ---
 @charset "utf-8";
 
-@import "reset", "var", "base", "header", "layout", "footer", "syntax-highlighting";
+@import "reset",
+        "var",
+        "base",
+        "header",
+        "layout",
+        "posts",
+        "footer",
+        "syntax-highlighting";
