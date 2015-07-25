@@ -4,6 +4,19 @@ layout: default
 
 <article class="blogpost">
   <header>
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
+      {{ page.date | date: "%b %-d, %Y" }}
+    </time>
+
+    <span class="post-category">
+      {{ page.categories }}
+    </span>
+
+    <span class="post-length">
+      {{ content | number_of_words | plus:100 | divided_by:180 }} min read
+    </span>
+
+
     <h1>{{ page.title }}</h1>
   </header>
 

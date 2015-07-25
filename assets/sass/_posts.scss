@@ -1,4 +1,18 @@
 .blogpost {
+  header {
+    time, .post-category, .post-length {
+      font-weight: 300;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .post-category {
+      text-transform: capitalize;
+      &:before, &:after {
+        content: "\22c5";
+        margin: 0px 10px;
+      }
+    }
+  }
   footer {
     background: #f5f5f5;
     padding: 30px;
