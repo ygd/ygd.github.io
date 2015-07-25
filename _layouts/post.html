@@ -22,8 +22,8 @@ layout: default
 
   {{ content }}
   <footer>
-    <p class="date">{{ page.date | date: "%b %-d, %Y" }}</p>
-    <p>{{ page.categories }}</p>
-    <p>{{ page.tags }}</p>
+    {% for tags in page.tags %}
+    <a>{{ tags }}</a>
+    {% endfor %}
   </footer>
 </article>
