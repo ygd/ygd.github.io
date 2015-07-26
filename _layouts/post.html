@@ -5,7 +5,9 @@ layout: default
 <article class="blogpost">
   <header>
     <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
-      {{ page.date | date: "%b %-d, %Y" }}
+      <a href="{{ page.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </a>
     </time>
 
     <span class="post-category">
@@ -23,7 +25,7 @@ layout: default
   {{ content }}
   <footer>
     {% for tags in page.tags %}
-    <a>{{ tags }}</a>
+    <a href="{{ tags | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tags }}</a>
     {% endfor %}
   </footer>
 </article>
