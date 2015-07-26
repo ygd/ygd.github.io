@@ -1,9 +1,16 @@
 .blogpost {
+  &--loop-item {
+    margin-bottom: 75px;
+  }
   header {
-    time, .post-category, .post-length {
+    time a, .post-category, .post-length {
       font-weight: 300;
+      color: #a6a6a6;
       display: inline-block;
       margin-bottom: 5px;
+    }
+    time a:hover {
+      color: $blue;
     }
     .post-category {
       text-transform: capitalize;
@@ -11,6 +18,12 @@
         content: "\22c5";
         margin: 0px 10px;
       }
+    }
+  }
+  .read-more-link {
+    color: $blue;
+    &:hover {
+      border-bottom: 1px solid $blue;
     }
   }
   footer {

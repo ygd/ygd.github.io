@@ -2,16 +2,30 @@
 layout: default
 ---
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% for post in site.posts %}
+<article class="blogpost blogpost--loop-item">
+    <header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
+        <a href="{{ post.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </a>
+      </time>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <span class="post-category">
+        {{ post.categories }}
+      </span>
+
+      <span class="post-length">
+        {{ post.content | number_of_words | plus:100 | divided_by:180 }} min read
+      </span>
+
+      <h1>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h1>
+    </header>
+    {{ post.excerpt | replace:'</p>', ' <a href="-post-url-" class="read-more-link">Read more …</a></p>' | replace: '-post-url-', post.url }}
+  </article>
+{% endfor %}
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
