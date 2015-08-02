@@ -11,7 +11,6 @@
     border-radius: 50%;
     &:hover {
       border: 2px solid $blue;
-      background: $blue;
     }
     svg {
       width: 100%;
@@ -22,7 +21,7 @@
       }
     }
     &:hover path {
-      fill: white;
+      fill: $blue;
     }
   }
   nav {
