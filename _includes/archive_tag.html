@@ -1,5 +1,5 @@
 {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
-            {% include archive_postlisting.html %}
-                {% endif %}
-                {% endfor %}
+  {% if post.tags contains page.tag %}
+    {% include archive_postlisting.html %}
+  {% endif %}
+{% endfor %}

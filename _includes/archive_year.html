@@ -7,11 +7,11 @@
 {% if postyear == pageyear %}
 {% if postmonth != nextpostmonth %}
 {% if forloop.index != 1 %}
-</ul>
+</section>
 {% endif %}
 
-<h2 class="month"><a href="{{ post.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}">{{ post.date | date: '%B' }}</a></h2>
-<ul>
+<h2><a href="{{ post.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}">{{ post.date | date: '%B' }}</a></h2>
+<section>
   {% endif %}
 
   {% include archive_postlisting.html %}

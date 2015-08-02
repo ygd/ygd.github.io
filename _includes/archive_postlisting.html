@@ -1,11 +1,20 @@
-<li class="post">
-  <p class="meta">
-  on <a href="{{ post.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time></a>
-  </p>
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <p class="tags">
-  {% for tag in post.tags %}
-  <a href="{{ tag | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tag }}</a>
-  {% endfor %}
-  </p>
-</li>
+<article class="blogpost blogpost--archive">
+  <header>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
+      <a href="{{ post.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </a>
+    </time>
+
+    <span class="post-category">
+      {{ post.categories }}
+    </span>
+
+    <span class="post-length">
+      {{ post.content | number_of_words | plus:100 | divided_by:180 }} min read
+    </span>
+      <h2>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+  </header>
+</article>
