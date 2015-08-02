@@ -11,13 +11,13 @@
     margin-bottom: 75px;
   }
   header {
-    time a, .post-category, .post-length {
+    time a, .post-category, .post-category a, .post-length {
       font-weight: 300;
       color: #a6a6a6;
       display: inline-block;
       margin-bottom: 5px;
     }
-    time a:hover {
+    time a:hover, .post-category a:hover {
       color: $blue;
     }
     .post-category {

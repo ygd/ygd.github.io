@@ -13,7 +13,9 @@ layout: default
       </time>
 
       <span class="post-category">
-        {{ post.categories }}
+        <a href="{{ post.categories[0] | downcase | replace: ' ', '-' | prepend: '/categories/' | prepend: site.baseurl }}">
+          {{ post.categories }}
+        </a>
       </span>
 
       <span class="post-length">
