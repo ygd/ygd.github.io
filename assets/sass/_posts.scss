@@ -1,8 +1,11 @@
 .archive-title {
   text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
   small {
     display: block;
     font-size: 0.4em;
+    font-weight: 300;
     line-height: 1.2em;
   }
 }
