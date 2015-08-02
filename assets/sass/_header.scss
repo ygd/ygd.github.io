@@ -12,6 +12,9 @@
     &:hover {
       border: 2px solid $blue;
     }
+    &:active {
+      background: $blue;
+    }
     svg {
       width: 100%;
       height: 100%;
@@ -22,6 +25,9 @@
     }
     &:hover path {
       fill: $blue;
+    }
+    &:active path {
+      fill: white;
     }
   }
   nav {
