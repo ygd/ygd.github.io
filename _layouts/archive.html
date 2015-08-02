@@ -11,18 +11,26 @@ layout: default
   <small>Posts tagged with</small>
   {{ page.title }}
 </h1>
+{% elsif page.category and content != '' %}
+<h1 class="archive-title">
+  <small>Posts in category</small>
+  {{ page.title }}
+</h1>
 {% else %}
 <h1 class="archive-title">
   <small>Posts written in</small>
   {{ page.title }}
 </h1>
 {% endif %}
+
 {% unless page.title == 'Archive' %}
-{% if page.month %}
-{% include archive_month.html %}
-{% elsif page.year %}
-{% include archive_year.html %}
-{% elsif page.tag %}
-{% include archive_tag.html %}
-{% endif %}
+  {% if page.month %}
+    {% include archive_month.html %}
+  {% elsif page.year %}
+    {% include archive_year.html %}
+  {% elsif page.tag %}
+    {% include archive_tag.html %}
+  {% elsif page.category %}
+    {% include archive_category.html %}
+  {% endif %}
 {% endunless %}

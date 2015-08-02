@@ -1,4 +1,4 @@
-MONTH_NAMES = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "Oktober", "November", "December"]
+MONTH_NAMES = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 def write_template_file(path, permalink, title, options={})
     unless File.exists?(path)
@@ -19,11 +19,23 @@ end
 
 
 # Create containing folders
+categories_folder_path = File.expand_path("../categories/", __FILE__)
+Dir.mkdir(categories_folder_path) unless File.exists?(categories_folder_path)
 tags_folder_path = File.expand_path("../tags/", __FILE__)
 Dir.mkdir(tags_folder_path) unless File.exists?(tags_folder_path)
 dates_folder_path = File.expand_path("../dates/", __FILE__)
 Dir.mkdir(dates_folder_path) unless File.exists?(dates_folder_path)
 
+
+# Read Categories into array
+categories = []
+categorylist_path = File.expand_path("../../_site/archive/categorylist.txt", __FILE__)
+File.open(categorylist_path, 'r') do |f|
+    while category = f.gets
+        category = category.strip
+        categories += [category] unless category == "" || category == "\n"
+    end
+end
 
 # Read Tags into array
 tags = []
@@ -34,6 +46,7 @@ File.open(taglist_path, 'r') do |f|
         tags += [tag] unless tag == "" || tag == "\n"
     end
 end
+
 # Read Dates into array
 dates = []
 datelist_path = File.expand_path("../../_site/archive/datelist.txt", __FILE__)
@@ -45,12 +58,20 @@ File.open(datelist_path, 'r') do |f|
 end
 
 
+# Create template files for each Category
+for category in categories
+    categorypath = category.include?(' ') ? category.downcase.gsub!(' ','-') : category.downcase
+    categorypage_path = categories_folder_path + "/#{categorypath}.md"
+    write_template_file(categorypage_path, "categories/#{categorypath}/", category, {category: category})
+end
+
 # Create template files for each tag
 for tag in tags
     tagpath = tag.include?(' ') ? tag.downcase.gsub!(' ','-') : tag.downcase
     tagpage_path = tags_folder_path + "/#{tagpath}.md"
     write_template_file(tagpage_path, "tags/#{tagpath}/", tag, {tag: tag})
 end
+
 # Create template files for each year and month
 for date in dates
     yearpage_path = dates_folder_path + "/#{date[:year]}.md"
