@@ -12,4 +12,4 @@ markdown: kramdown
 permalink: /:categories/:title
 
 sass:
-  sass_dir: assets/sass
+  sass_dir: assets/css
