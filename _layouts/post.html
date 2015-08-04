@@ -27,7 +27,7 @@ layout: default
   {{ content }}
   <footer>
     {% for tags in page.tags %}
-    <a href="{{ tags | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tags }}</a>
+    <a class="tag" href="{{ tags | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tags }}</a>
     {% endfor %}
   </footer>
 </article>

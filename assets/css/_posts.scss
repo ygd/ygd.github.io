@@ -37,10 +37,6 @@
       border-bottom: 1px solid $blue;
     }
   }
-  footer {
-    background: #f5f5f5;
-    padding: 30px;
-  }
   &--archive {
     width: 47.2%;
     display: inline-table;
@@ -54,5 +50,22 @@
     h2{
       font-size: 1.5em;
     }
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin:  0px 20px 30px 0px;;
+  border: 1px solid $black;
+  border-radius: 3px;
+  font-weight: 300;
+  &:hover {
+    border: 1px solid $blue;
+    color: $blue;
+  }
+  &:active {
+    background: $blue;
+    color: white;
   }
 }
