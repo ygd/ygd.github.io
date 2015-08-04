@@ -86,7 +86,7 @@ module.exports = (grunt) ->
 		connect:
 			server:
 				options:
-					livereload: true
+					livereload: false
 					base: '_site/'
 					port: 4000
 
