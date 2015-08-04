@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <article class="blogpost">
@@ -26,8 +27,15 @@ layout: default
 
   {{ content }}
   <footer>
-    {% for tags in page.tags %}
-    <a class="tag" href="{{ tags | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tags }}</a>
-    {% endfor %}
+    <section>
+      {% for tags in page.tags %}
+        <a class="tag" href="{{ tags | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tags }}</a>
+      {% endfor %}
+    </section>
+    <section>
+      {% if page.comments %}
+      {% include disqus_code.html %}
+      {% endif %}
+    </section>
   </footer>
 </article>
