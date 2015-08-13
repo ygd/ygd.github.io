@@ -5,6 +5,7 @@ comments: true
 
 <article class="blogpost">
   <header>
+
     <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
       <a href="{{ page.date | date: '/%Y/' | prepend: site.baseurl | prepend: '/archive' }}">
         {{ page.date | date: "%b %-d, %Y" }}
@@ -21,8 +22,11 @@ comments: true
       {{ content | number_of_words | plus:100 | divided_by:180 }} min read
     </span>
 
-
     <h1>{{ page.title }}</h1>
+
+    {% if page.img %}
+      <img src="{{ page.img }}">
+    {% endif %}
   </header>
 
   {{ content }}

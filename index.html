@@ -25,6 +25,9 @@ layout: default
       <h1>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h1>
+      {% if post.img %}
+        <img src="{{ post.img }}">
+      {% endif %}
     </header>
     {{ post.excerpt | replace:'</p>', ' <a href="-post-url-" class="read-more-link">Read more …</a></p>' | replace: '-post-url-', post.url }}
   </article>
