@@ -37,6 +37,11 @@
       border-bottom: 1px solid $blue;
     }
   }
+  img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 15px;
+  }
   &--archive {
     width: 47.2%;
     display: inline-table;
