@@ -49,11 +49,17 @@
     &:nth-of-type(2n+1) {
       margin-right: 5%;
     }
-    time a, .post-category, .post-length {
-      font-size: 0.85em;
-    }
-    h2{
-      font-size: 1.5em;
+    header {
+      time a, .post-category, .post-category a, .post-length {
+        margin: 0px;
+      }
+      time a, .post-category, .post-length {
+        font-size: 0.85em;
+      }
+      h2{
+        font-size: 1.5em;
+        margin-bottom: 5px;
+      }
     }
   }
   footer {
