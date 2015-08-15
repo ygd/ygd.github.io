@@ -12,7 +12,10 @@
     <nav>
       <ul>
         <li>
-          <a href="{{ site.baseurl }}/" id="home" title="Blog"> Blog </a>
+          <a href="{{ site.baseurl }}/" title="Blog"
+             {% if page.title == 'Blog' %}
+             class="active"
+             {% endif %}> Blog </a>
         </li>
 
         <li>
