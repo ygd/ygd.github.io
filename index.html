@@ -33,5 +33,3 @@ title: Blog
     {{ post.excerpt | replace:'</p>', ' <a href="-post-url-" class="read-more-link">Read more …</a></p>' | replace: '-post-url-', post.url }}
   </article>
 {% endfor %}
-
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
