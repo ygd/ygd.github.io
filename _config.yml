@@ -3,7 +3,7 @@ title: Yasin Güzeldal
 email: yasin@guezeldal.com
 description: Yasin Güzeldals design blog
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yasin.guezeldal.com" # the base hostname & protocol for your site
+url: "http://yasin.guzeldal.com" # the base hostname & protocol for your site
 twitter_username: yasinguezeldal
 github_username:  yguezeldal
 
@@ -14,3 +14,6 @@ exclude: [Gemfile, Gemfile.lock, node_modules, Gruntfile.coffee, package.json, R
 
 sass:
   sass_dir: assets/css
+
+gems:
+  - jekyll-sitemap
