@@ -10,7 +10,7 @@ github_username:  yguezeldal
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
-exclude: [node_modules, Gruntfile.coffee, package.json, README.md]
+exclude: [Gemfile, Gemfile.lock, node_modules, Gruntfile.coffee, package.json, README.md]
 
 sass:
   sass_dir: assets/css
