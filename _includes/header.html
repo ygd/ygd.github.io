@@ -13,7 +13,9 @@
       <ul>
         <li>
           <a href="{{ site.baseurl }}/" title="Blog"
-             {% if page.title == 'Blog' %}
+             {% if page.type == 'post' or page.type == 'archive' %}
+             class="active"
+             {% elsif page.url == '/index.html' %}
              class="active"
              {% endif %}> Blog </a>
         </li>
