@@ -9,12 +9,14 @@
     line-height: 1.2em;
   }
 }
+
 .blogpost {
   &--loop-item {
     margin-bottom: 75px;
   }
   header {
-    time a, .post-category, .post-category a, .post-length {
+    time a, .post-category a, .post-length {
+      font-size: 1em;
       font-weight: 300;
       color: #a6a6a6;
       display: inline-block;
@@ -27,6 +29,7 @@
       &:before, &:after {
         content: "\22c5";
         margin: 0px 10px;
+        color: #a6a6a6;
       }
     }
   }
@@ -84,5 +87,15 @@
   &:active {
     background: $blue;
     color: white;
+  }
+}
+
+@media (max-width:739px) {
+  .blogpost {
+    header {
+      time a, .post-category a, .post-length {
+        font-size: 1.2em;
+      }
+    }
   }
 }
