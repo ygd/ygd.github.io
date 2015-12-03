@@ -75,3 +75,11 @@
     }
   }
 }
+
+@media (max-width:739px) {
+  .page-header {
+    &__content {
+      padding: 10px;
+    }
+  }
+}
