@@ -3,3 +3,9 @@ main {
   margin: 0 auto;
   padding: 30px;
 }
+
+@media (max-width:739px) {
+  main {
+    padding: 10px;
+  }
+}
