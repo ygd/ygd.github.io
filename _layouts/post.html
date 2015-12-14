@@ -67,7 +67,7 @@ comments: true
           </a>
         </li>
         <li class="rrssb-pinterest">
-          <a href="http://pinterest.com/pin/create/button/?url={{ page.url | prepend: site.url }}&amp;media={{ page.img }}&amp;description={{ page.title }}">
+          <a href="http://pinterest.com/pin/create/button/?url={{ page.url | prepend: site.url }}&amp;media={{ page.img | prepend: site.url }}&amp;description={{ page.title }}">
             <span class="rrssb-icon">
               {% include icons/pinterest.html %} 
             </span>
