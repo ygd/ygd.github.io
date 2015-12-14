@@ -1,11 +1,5 @@
 <footer class="page-footer">
   <nav>
-    <a href="{{ '/about' | prepend: site.baseurl }}"
-       title="About" {% if page.title == 'About' %}
-       class="active" {% endif %}>
-      About
-    </a>
-
     <a href="{{ '/imprint' | prepend: site.baseurl }}"
        title="Imprint" {% if page.title == 'Imprint' %}
        class="active" {% endif %}>
@@ -14,11 +8,11 @@
   </nav>
 
   <section>
-    <a class="social-icon" href="https://github.com/{{ site.github_username }}">
+    <a class="social-icon" href="https://github.com/{{ site.author.github }}">
       {% include icons/github.html %} 
     </a>
 
-    <a class="social-icon" href="https://twitter.com/{{ site.twitter_username }}">
+    <a class="social-icon" href="https://twitter.com/{{ site.author.twitter }}">
       {% include icons/twitter.html %} 
     </a>
   </section>
