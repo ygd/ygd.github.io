@@ -1,11 +1,20 @@
 # Site settings
 title: Yasin Güzeldal
 email: yasin@guezeldal.com
-description: Yasin Güzeldals design blog
+name: Yasin Güzeldal blog
+description: Blog about design, code and everything about the web.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yasin.guzeldal.com" # the base hostname & protocol for your site
-twitter_username: yasinguezeldal
+locale: "en"
 github_username:  yguezeldal
+icon: "/assets/img/yasinguzeldalcom.jpg"
+author:
+  facebook:     yasin.guezel
+  twitter:      yasinguezeldal
+  google_plus:  103043894926255935170
+
+fb_admins:      1188474267
+fb_appid:       1227999463883919
 
 # Build settings
 markdown: kramdown
