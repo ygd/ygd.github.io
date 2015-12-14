@@ -23,7 +23,7 @@ If you have the luxury of a continuos deployment at work you feel poor when you 
 
 I never get up and running a continuos deployment listening to GitHub or Bitbucket repositories of my WordPress projects. It was too complex, hard to achieve and I have no time for that.
 
-### WordPress tends you to act like a “cowboy-programmer”
+### WordPress tends you to work like a “cowboy-programmer”
 
 The facts above are leading somebody to work without version control and pushes to drag and drop files directly via ftp to production. At least this is what happened to me while working with WordPress since a few years.
 
