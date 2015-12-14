@@ -14,4 +14,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | append: "/" }}">
 
   <script src="{{ "/assets/js/jquery-2.1.4.min.js" | prepend: site.baseurl }}"></script>
+  {% if jekyll.environment == 'production' %}
+    {% include ga.html %}
+  {% endif %}
 </head>
