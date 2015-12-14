@@ -1,6 +1,6 @@
 ---
 layout: post
-img: "/assets/img/test.jpg"
+img: "/assets/img/switch-from-wordpress-to-jekyll.jpg"
 title:  "Why I switch from WordPress to Jekyll on GitHub-Pages"
 date:   2015-12-14
 categories: Webdesign
