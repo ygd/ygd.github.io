@@ -5,7 +5,7 @@ name: Yasin Güzeldal blog
 description: Blog about design, code and everything about the web.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yasin.guzeldal.com" # the base hostname & protocol for your site
-locale: "en"
+locale: "en_US"
 github_username:  yguezeldal
 icon: "/assets/img/yasinguzeldalcom.jpg"
 author:
