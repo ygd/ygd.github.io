@@ -4,7 +4,7 @@ email: yasin@guezeldal.com
 name: Yasin Güzeldal blog
 description: Blog about design, code and everything about the web.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yasin.guzeldal.com" # the base hostname & protocol for your site
+url: "https://yasin.guzeldal.com" # the base hostname & protocol for your site
 locale: "en_US"
 icon: "/assets/img/yasinguzeldalcom.jpg"
 author:
