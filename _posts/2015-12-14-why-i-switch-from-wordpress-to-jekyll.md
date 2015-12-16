@@ -11,17 +11,17 @@ tags:
 - Ruby
 ---
 
-First things first, this is not a WordPress bashing or Jekyll hype post. I will just list some reasons why I moved from WordPress to Jekyll. You can do a lot of stuff with WordPress easily. It brings a lot of functionality out of the box and there are tons of free plugins and free themes which you can use easily and do a lot of complex stuff without writing any line of code.
+First things first, this is not a [WordPress][wp] bashing or [Jekyll][jekyll] hype post. I will just list some reasons why I moved from WordPress to Jekyll. You can do a lot of stuff with WordPress easily. It brings a lot of functionality out of the box and there are tons of free plugins and free themes which you can use easily and do a lot of complex stuff without writing any line of code.
 
-Writing no code means that you don't have full control about every detail. You have to touch the code here and there to tweak details and get things right. If you write code it is recommended to use a version control system, like git. No problems so far. But things are getting complex if you want to automate your build and deployment process.
+Writing no code means that you don't have full control about every detail. You have to touch the code here and there to tweak details and get things right. If you write code it is recommended to use a version control system, like [git][git]. No problems so far. But things are getting complex if you want to automate your build and deployment process.
 
 ## Automated deployment with WordPress is painful
 
 Most WordPress developers/users are bringing their code changes to production via ftp: save file, commit changes if using version control, drag and drop it on your server and refresh the browser. WordPress updates or plugin updates has to be done manually and twice because of your local setup. All of this is getting weird with version control systems and when you want to automate your deployment.
 
-If you have the luxury of a continuos deployment at work you feel poor when you are working on your private WordPress projects. It is really smooth just to say git push on your master branch and see the changes after a couple of seconds or minutes on your test/production environment.
+If you have the luxury of a [continuos deployment][continuous-deployment] at work you feel poor when you are working on your private WordPress projects. It is really smooth just to say git push on your master branch and see the changes after a couple of seconds or minutes on your test/production environment.
 
-I never get up and running a continuos deployment listening to GitHub or Bitbucket repositories of my WordPress projects. It was too complex, hard to achieve and I have no time for that.
+I never get up and running a continuos deployment listening to [GitHub][github] or [Bitbucket][bitbucket] repositories of my WordPress projects. It was too complex, hard to achieve and I have no time for that.
 
 ### WordPress tends you to work like a “cowboy-programmer”
 
@@ -29,9 +29,9 @@ The facts above are leading somebody to work without version control and pushes 
 
 ## Automated deployment with Jekyll and GitHub-Pages is smooth
 
-With Jekyll and GitHub-Pages automated deployment is a no brainer. Basically you just need to set up a Jekyll project and a repository with a specific name on GitHub. Boom, an automatically deployed blog.
+With Jekyll and [GitHub-Pages][github-pages] automated deployment is a no brainer. Basically you just need to set up a Jekyll project and a repository with a specific name on GitHub. Boom, an automatically deployed blog.
 
-It is very basic, a MVP if you want. No individual theme, no archive pages, no comments and a bunch of other stuff is (maybe) missing which comes out of the box with WordPress. But hey, you got automated deployment. So, extending your blog will be much more fun and you have control on everything. And your workflow is much more clean, professional and fun.
+It is very basic, a [MVP][mvp] if you want. No individual theme, no archive pages, no comments and a bunch of other stuff is (maybe) missing which comes out of the box with WordPress. But hey, you got automated deployment. So, extending your blog will be much more fun and you have control on everything. And your workflow is clean, professional and fun.
 
 ### Synchronous local and production setup with Jekyll
 
@@ -39,11 +39,11 @@ As mentioned before, there is redundant work for updating WordPress plugins twic
 
 There are also contents which takes effort to keep everything synchronized between your local and production WordPress installation. By the way, this is the same for all websites or blogs with a database.
 
-Maybe it is a nice to have all contents synched because dummy content is doing the job as well. But then with Jekyll you have something nice.
+Maybe it is a nice to have all contents synched because dummy content is doing the job as well. But then with Jekyll you have something nice, because your website is looking the same on all environments.
 
 ## Ruby is more fun then PHP
 
-When we speak about fun and clean, I think the Ruby language is more fun and more clean then PHP. This will be quickly clear when you look at the syntax.
+When we speak about fun and clean, I think the [Ruby][ruby] language is more fun and more clean then PHP. This will be quickly clear when you look at the syntax.
 
 I have also the feeling of a young and dynamic Ruby community. PHP makes me feel like 80’S, old and dusty.
 
@@ -76,7 +76,7 @@ Jekyll is robust and secure. No database, no logins, no backend. Everything on t
 
 You have to see how you handle contact forms, comment functionality and other things which is coming obviously out of the box with WordPress. But there are a couple of ways to solve this problems.
 
-I am a fan of simplicity. I try to get rid of things which are not really necessary. This helps me to keep things clean and reduce complexity. I never thought about a contact form on my website. It was always a part of the website. But Jekyll made me think of it. At the end I came to the conclusion that I don’t need it necessarily. Boom. One element less on the website.
+I am a fan of simplicity. I try to get rid of things which are not really necessary. This helps me to keep things clean and reduce complexity. I never thought about the need of a contact form on my website. It was always a part of the website. But Jekyll made me think of it. At the end I came to the conclusion that I don’t need it necessarily. Zack. One element less on the website.
 
 ### Comparing Jekyll and WordPress performance
 
@@ -92,7 +92,7 @@ WordPress has its own WYSWYG editor where you can type directly your post. As kn
 
 Everything happens in your editor when you use Jekyll. You code and write blog posts in your editor. There are two file types for blog posts, Markdown and HTML. I prefer Markdown at the moment. But I would do an experiment when HAML is supported by GitHub-Pages. Currently it is not supported because Jekyll plugins are not allowed.
 
-I use vim as my standard editor in my terminal. Mainly for writing code. First I tried to write my posts as well. But then quickly I noticed that this is not what I wanted. And then I remembered the beautiful editor iA Writer from the Information Architects. It supports Markdown and provides a perfect environment for writing blog posts. I really recommend it.
+I use [vim][vim] as my standard editor in my terminal. Mainly for writing code. First I tried to write my posts as well. But then quickly noticed that this is not what I wanted. Then I remembered the beautiful editor [iA Writer][ia-writer] from the [Information Architects][ia]. It supports Markdown and provides a perfect environment for writing blog posts. I really recommend it.
 
 ## Conclusion
 
@@ -103,3 +103,18 @@ Not everyone is using Git or version control at all. they just want a website wi
 Anyhow, I think I will still use WordPress here and there. But I am very lucky to have now this Jekyll blog.
 
 Feel free to drop your opinion …
+
+[wp]: https://wordpress.org/ 'WordPress website'
+[jekyll]: https://jekyllrb.com/ 'Jekyll website'
+[git]: https://git-scm.com/ 'Git website'
+[continuous-deployment]: http://www.startuplessonslearned.com/2010/01/case-study-continuous-deployment-makes.html 'Eric Ries post about a continuous deployment case study'
+[github]: https://github.com/ 'Github website'
+[bitbucket]: https://bitbucket.org/ 'Bitbucket website'
+[mvp]: http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html 'Eric Ries post about Minimum Viable Product'
+[github-pages]: https://pages.github.com/ 'Github-Pages website'
+[ruby]: https://www.ruby-lang.org/ 'Ruby programming language website'
+[vim]: http://www.vim.org/about.php 'About Vi Improved'
+[ia-writer]: https://ia.net/writer/ 'iA Writer website'
+[ia]: https://ia.net/ 'Information Architects website'
+
+
