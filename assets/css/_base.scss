@@ -42,6 +42,17 @@ a {
   }
 }
 
+p {
+  a {
+    display: inline-block;
+    color: $blue;
+    border-bottom: 1px solid white;
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+  }
+}
+
 @media (max-width:739px) {
   html {
     font-size: 75%;
