@@ -83,7 +83,7 @@ comments: true
           </a>
         </li>
         <li class="rrssb-email">
-          <a href="mailto:?subject={{ page.title }} - Blogpost by Yasin Güzeldal&amp;body={{ page.excerpt | remove: '<p>' | replace: '</p>', '%0A%0A Full Article: %0A%0A' }}{{ page.url | prepend: site.url }}">
+          <a href="mailto:?subject={{ page.title }} - Blogpost by Yasin Güzeldal&amp;body={{ page.excerpt | strip_html | append:  '%0A%0A Full Article: %0A%0A' }}{{ page.url | prepend: site.url }}">
             <span class="rrssb-icon">
               {% include icons/email.html %} 
             </span>
