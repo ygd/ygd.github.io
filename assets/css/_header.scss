@@ -12,6 +12,10 @@
     padding: 10px;
     border: 2px solid $black;
     border-radius: 50%;
+    &--centered {
+      display: block;
+      margin: 0 auto;
+    }
     &:hover {
       border: 2px solid $blue;
     }
