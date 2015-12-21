@@ -19,7 +19,7 @@
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       {% if post.img %}
-        <img src="{{ post.img }}">
+        <img src="{{ post.img }}" alt="{% if post.img-alt %}{{ post.img-alt }}{% endif %}">
       {% endif %}
   </header>
 </article>

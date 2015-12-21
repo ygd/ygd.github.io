@@ -27,7 +27,7 @@ title: Yasin Güzeldals Blog about Design & Code
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h1>
       {% if post.img %}
-        <img src="{{ post.img }}">
+        <img src="{{ post.img }}" alt="{% if post.img-alt %}{{ post.img-alt }}{% endif %}">
       {% endif %}
     </header>
     {{ post.excerpt | replace:'</p>', ' <a href="-post-url-" class="read-more-link">Read more …</a></p>' | replace: '-post-url-', post.url }}
