@@ -42,9 +42,9 @@ There are also contents which takes effort to keep everything synchronized betwe
 
 Maybe it is a nice to have all contents synched because dummy content is doing the job as well. But then with Jekyll you have something nice, because your website is looking the same on all environments.
 
-## Ruby is more fun then PHP
+## Ruby is more fun than PHP
 
-When we speak about fun and clean, I think the [Ruby][ruby] language is more fun and more clean then PHP. This will be quickly clear when you look at the syntax.
+When we speak about fun and clean, I think the [Ruby][ruby] language is more fun and more clean than PHP. This will be quickly clear when you look at the syntax.
 
 I have also the feeling of a young and dynamic Ruby community. PHP makes me feel like 80’S, old and dusty.
 
@@ -63,7 +63,7 @@ Be careful, Plugins can break your layout or conflict with other plugins. I prom
 
 ## Full control with Jekyll
 
-Knowing what happens under the hood is much easier in a slim system like Jekyll then in a mothership like WordPress. So getting full control on everything is easy as well. And this is good.
+Knowing what happens under the hood is much easier in a slim system like Jekyll than in a mothership like WordPress. So getting full control on everything is easy as well. And this is good.
 
 Keep your system basic or add features you want to have one by one. Coding features on your own gives you full control about scope, look and behavior. So you can keep things lean and maintainable.
 
@@ -81,9 +81,9 @@ I am a fan of simplicity. I try to get rid of things which are not really necess
 
 ### Comparing Jekyll and WordPress performance
 
-There are no big differences between Jekyll and WordPress regarding performance when you use page caching. 
+There are no big differences between Jekyll and WordPress regarding performance when you use page caching.
 
-Most WordPress plugins update the cache for a page if you publish changes on that page or if the page is affected by new publications. So you will loose some cool things which comes along with dynamic websites. This won’t hurt most of the people. 
+Most WordPress plugins update the cache for a page if you publish changes on that page or if the page is affected by new publications. So you will loose some cool things which comes along with dynamic websites. This won’t hurt most of the people.
 
 E.g. dynamic parts of your WordPress content like “popular posts” will not tell the truth or look different on each page.
 
@@ -97,7 +97,7 @@ I use [vim][vim] as my standard editor in my terminal. Mainly for writing code. 
 
 ## Conclusion
 
-At the end I think Jekyll is a more techy solution of a blog then WordPress. Some host providers have a 1-click-install option for WordPress and there are tons of WordPress tutorials. By the way, both of the blog engines are well documented.
+At the end I think Jekyll is a more techy solution of a blog than WordPress. Some host providers have a 1-click-install option for WordPress and there are tons of WordPress tutorials. By the way, both of the blog engines are well documented.
 
 Not everyone is using Git or version control at all. they just want a website with as low as possible effort. Clean code, version control and a smooth workflow (code wise) have low priority. For those people WordPress is fine. For the rest I would recommend to try out Jekyll.
 
