@@ -90,5 +90,12 @@
         margin-bottom: 0.5em;
       }
     }
+    &--archive {
+      header {
+        .post-category, .post-length {
+          display: none;
+        }
+      }
+    }
   }
 }
