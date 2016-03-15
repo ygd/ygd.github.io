@@ -4,4 +4,15 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<h1>Porfolio page is under construction</h1>
+{% for portfolio in site.portfolio %}
+<article class="portfolio portfolio--loop-item">
+  <header>
+    <img src="{{ portfolio.img }}"
+         alt="{% if portfolio.img-alt %}{{ portfolio.img-alt }}{% endif %}">
+    <h1>
+      <a href="{{ portfolio.url | prepend: site.baseurl }}">
+        {{ portfolio.title }}
+      </a>
+    </h1>
+
+{% endfor %}

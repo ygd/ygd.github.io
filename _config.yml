@@ -16,6 +16,15 @@ author:
 fb_admins:      1188474267
 fb_appid:       1227999463883919
 
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+    defaults:
+      - scope:
+          path: ""
+          type: portfolio
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
