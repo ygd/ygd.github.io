@@ -23,6 +23,3 @@ exclude: [Gemfile, Gemfile.lock, node_modules, Gruntfile.coffee, package.json, R
 
 sass:
   sass_dir: assets/css
-
-gems:
-  - jekyll-sitemap
