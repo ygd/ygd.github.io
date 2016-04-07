@@ -27,6 +27,7 @@ collections:
 
 # Build settings
 markdown: kramdown
+relative_permalinks: true
 permalink: /:categories/:title
 exclude: [Gemfile, Gemfile.lock, node_modules, Gruntfile.coffee, package.json, README.md]
 
