@@ -14,7 +14,7 @@ comments: true
     </time>
 
     <span class="post-category">
-      <a href="{{ page.categories[0] | downcase | replace: ' ', '-' | prepend: '/categories/' | prepend: site.baseurl }}">
+      <a href="{{ page.categories[0] | downcase | replace: ' ', '-' | prepend: '/' | prepend: site.baseurl }}">
         {{ page.categories }}
       </a>
     </span>

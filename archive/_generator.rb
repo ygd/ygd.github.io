@@ -62,7 +62,7 @@ end
 for category in categories
     categorypath = category.include?(' ') ? category.downcase.gsub!(' ','-') : category.downcase
     categorypage_path = categories_folder_path + "/#{categorypath}.md"
-    write_template_file(categorypage_path, "categories/#{categorypath}/", category, {category: category})
+    write_template_file(categorypage_path, "#{categorypath}/", category, {category: category})
 end
 
 # Create template files for each tag
