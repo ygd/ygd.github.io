@@ -1,7 +1,7 @@
 ---
 layout: archive
-permalink: 'categories/webdesign/'
-redirect_from: 'archive/categories/webdesign/'
-title: 'webdesign'
-category: 'webdesign'
+permalink: 'webdesign/'
+redirect_from: 'archive/webdesign/'
+title: 'Webdesign'
+category: 'Webdesign'
 ---
