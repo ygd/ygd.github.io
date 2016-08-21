@@ -2,6 +2,7 @@
 layout: page
 title: Imprint
 permalink: /imprint/
+noindex: true
 ---
 
 # Imprint
