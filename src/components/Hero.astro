@@ -3,7 +3,7 @@
 ---
 
 <section
-  class="relative w-full h-screen bg-gradient-to-b from-blue-500 to-teal-500 overflow-hidden"
+  class="relative h-screen w-full bg-gradient-to-b from-blue-500 to-teal-500 overflow-hidden -z-0"
 >
   <div class="w-full h-screen flex items-center justify-center flex-col z-10">
     <a href="https://yasin.guezeldal.com" class="mb-4 text-white/90">
@@ -43,16 +43,11 @@
     overscroll-behavior-y: none;
     scroll-behavior: smooth;
   }
-  body {
-    position: relative;
-    width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+
   .hero {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 130vh;
     background: linear-gradient(
       to bottom,
       oklch(60% 0.2 230),
@@ -66,7 +61,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
 
     background-image: linear-gradient(
       to bottom,
@@ -139,7 +134,7 @@
     transform: scale(-1, 1);
 
     --duration: 20s;
-    --lowHeight: 30vh;
+    --lowHeight: 25vh;
     --highHeight: 70vh;
     --layerNum: 2;
     --index: 0;
